@@ -1,8 +1,8 @@
-import HeroImg from "../assets/herobg.png";
+import HeroImg from "../assets/Herobg.png";
 
 function Hero() {
   return (
-    <section id="home" className="text-center pt-32 pb-24 px-6"
+    <section id="homegit a" className="text-center pt-32 pb-24 px-6"
       style={{
         backgroundImage: `url(${HeroImg})`,
         backgroundSize: "cover",
