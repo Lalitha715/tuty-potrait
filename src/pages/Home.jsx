@@ -4,7 +4,6 @@ import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatsappButton from "../components/WhatsAppButton";
-import Navbar from "../components/Navbar";
 
 function Home() {
   return (
