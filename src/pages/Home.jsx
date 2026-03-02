@@ -5,6 +5,7 @@ import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 import WhatsappButton from "../components/WhatsAppButton";
 
+
 function Home() {
   return (
     <div className="bg-gray-100 min-h-screen text-grey-800">
