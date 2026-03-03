@@ -3,7 +3,7 @@ import Hero from "../components/Hero";
 import Gallery from "../components/Gallery";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import WhatsappButton from "../components/WhatsAppButton";
+import WhatsAppButton from "../components/WhatsAppButton";
 
 function Home() {
   return (
@@ -14,7 +14,7 @@ function Home() {
       <Gallery />
       <Contact />
       <Footer />
-      <WhatsappButton />
+      <WhatsAppButton />
     </div>
   );
 }

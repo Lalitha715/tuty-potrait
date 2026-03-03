@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { products } from "../data/product";
+import { products } from "../data/Product";
 
 function Gallery() {
   const categories = [
