@@ -27,7 +27,7 @@ function Hero() {
         </a>
 
         <a
-          href="https://wa.me/919999999999"
+          href="https://wa.me/917708260129"
           className="bg-red-600 text-white px-6 py-3 rounded-md hover:bg-red-700 transition"
         >
           Order Now
