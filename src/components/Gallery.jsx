@@ -24,6 +24,7 @@ function Gallery() {
   ];
 
   const [selectedCategory, setSelectedCategory] = useState(null);
+  const [selectedProduct, setSelectedProduct] = useState(null);
 
   const filteredProducts =
     !selectedCategory || selectedCategory === "All"
@@ -33,13 +34,17 @@ function Gallery() {
   return (
     <section id="gallery" className="py-20 px-6 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-        
+
         {/* Dynamic Heading */}
         <h2 className="text-3xl font-bold mb-12">
-          {selectedCategory ? selectedCategory : "Our Categories"}
+          {selectedProduct
+            ? selectedProduct.name
+            : selectedCategory
+            ? selectedCategory
+            : "Our Categories"}
         </h2>
 
-        {/* ================= CATEGORY CARD VIEW ================= */}
+        {/* ================= CATEGORY VIEW ================= */}
         {!selectedCategory && (
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
             {categories.map((cat) => (
@@ -68,7 +73,7 @@ function Gallery() {
         )}
 
         {/* ================= PRODUCT VIEW ================= */}
-        {selectedCategory && (
+        {selectedCategory && !selectedProduct && (
           <>
             <button
               onClick={() => setSelectedCategory(null)}
@@ -78,16 +83,11 @@ function Gallery() {
             </button>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-10">
-              {filteredProducts.length === 0 && (
-                <p className="text-gray-500 col-span-full">
-                  No products available in this category.
-                </p>
-              )}
-
               {filteredProducts.map((product) => (
                 <div
                   key={product.id}
-                  className="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+                  onClick={() => setSelectedProduct(product)}
+                  className="cursor-pointer bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
                 >
                   <img
                     src={product.image}
@@ -102,20 +102,77 @@ function Gallery() {
                   <p className="text-gray-600 mt-1">
                     {product.price}
                   </p>
-
-                  <a
-                    href={`https://wa.me/917708260129?text=Hi, I'm interested in ${product.name}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
-                  >
-                    Order on WhatsApp
-                  </a>
                 </div>
               ))}
             </div>
           </>
         )}
+
+        {/* ================= TYPE VIEW ================= */}
+        {selectedProduct && (
+          <>
+            <button
+              onClick={() => setSelectedProduct(null)}
+              className="mb-8 bg-gray-800 text-white px-5 py-2 rounded-md hover:bg-gray-700 transition"
+            >
+              ← Back to Products
+            </button>
+
+            {/* If product has types */}
+            {selectedProduct.types ? (
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-10">
+                {selectedProduct.types.map((type) => (
+                  <div
+                    key={type.id}
+                    className="bg-white p-5 rounded-xl shadow-md hover:shadow-xl transition transform hover:-translate-y-1"
+                  >
+                    <img
+                      src={type.image}
+                      alt={type.typeName}
+                      className="rounded-lg w-full h-60 object-cover"
+                    />
+
+                    <h3 className="mt-4 text-lg font-semibold">
+                      {type.typeName}
+                    </h3>
+
+                    <a
+                      href={`https://wa.me/917708260129?text=Hi, I'm interested in ${selectedProduct.name} - ${type.typeName}`}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
+                    >
+                      Order on WhatsApp
+                    </a>
+                  </div>
+                ))}
+              </div>
+            ) : (
+              /* If product has no types */
+              <div className="bg-white p-5 rounded-xl shadow-md max-w-md mx-auto">
+                <img
+                  src={selectedProduct.image}
+                  alt={selectedProduct.name}
+                  className="rounded-lg w-full h-60 object-cover"
+                />
+
+                <p className="text-gray-600 mt-4">
+                  {selectedProduct.price}
+                </p>
+
+                <a
+                  href={`https://wa.me/917708260129?text=Hi, I'm interested in ${selectedProduct.name}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded-md hover:bg-green-600 transition"
+                >
+                  Order on WhatsApp
+                </a>
+              </div>
+            )}
+          </>
+        )}
+
       </div>
     </section>
   );
