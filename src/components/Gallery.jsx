@@ -88,7 +88,7 @@ function Gallery() {
                   >
                     <div className="w-full aspect-[4/3] flex items-center justify-center rounded-lg">
                       <img
-                        src="https://placehold.co/400x300?text=Product"
+                        src={item.image}
                         alt={item.name}
                         className="max-h-full max-w-full object-contain"
                       />
