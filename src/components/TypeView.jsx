@@ -47,6 +47,12 @@ function TypeView({ selectedProduct, onBack }) {
                 Available: {typeItem.sizes.join(", ")}
               </p>
             )}
+            {typeItem.available && (
+              <p className="text-sm text-gray-500 mt-1">
+                Also available as: {typeItem.available.join(", ")}
+              </p>
+            )}
+
             <a
               href={`https://wa.me/917708260129?text=Hi, I'm interested in ${selectedProduct.name} - ${typeItem.name}`}
               target="_blank"

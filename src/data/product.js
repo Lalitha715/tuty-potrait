@@ -110,50 +110,50 @@ export const product = [
     items: [
       {
         name: "Fur Pillows",
+        image:"Type/Fur-Pillow/SQUARERED.png",
         types: [
-          { name: "Square - Red", image: PLACEHOLDER },
-          { name: "Square - Rainbow", image: PLACEHOLDER },
-          { name: "Square - White", image: PLACEHOLDER },
-          { name: "Square - Pink", image: PLACEHOLDER },
-          { name: "Square - Blue", image: PLACEHOLDER },
-          { name: "Square - Yellow", image: PLACEHOLDER },
-          { name: "Heart - Red", image: PLACEHOLDER },
-          { name: "Heart - Rainbow", image: PLACEHOLDER },
-          { name: "Heart - White", image: PLACEHOLDER },
-          { name: "Heart - Pink", image: PLACEHOLDER },
-          { name: "Heart - Blue", image: PLACEHOLDER },
-          { name: "Heart - Yellow", image: PLACEHOLDER }
+          { name: "Square - Red", image: "Type/Fur-Pillow/SQUARERED.png" },
+          { name: "Square - Rainbow", image: "Type/Fur-Pillow/SQUARERAINBOW.png" },
+          { name: "Square - White", image: "Type/Fur-Pillow/SQUAREWHITE.png" },
+          { name: "Heart - Red", image: "Type/Fur-Pillow/REDHEART.png" },
+          { name: "Heart - Rainbow", image: "Type/Fur-Pillow/RAINBOWHEART.png" },
+          { name: "Heart - White", image: "Type/Fur-Pillow/WHITEHEART.png" },
+          { name: "Heart - Pink", image: "Type/Fur-Pillow/PINKHEART.png" },
+          { name: "Heart - Blue", image: "Type/Fur-Pillow/BLUEHEART.png" },
+          { name: "Heart - Yellow", image: "Type/Fur-Pillow/YELLOWHEART.png" }
         ]
       },
       {
         name: "Small Fur Pillows",
+        image:"Type/Small-Fur-Pillow/REDHEART.png",
         types: [
-          { name: "Red", image: PLACEHOLDER },
-          { name: "Blue", image: PLACEHOLDER },
-          { name: "Pink", image: PLACEHOLDER },
-          { name: "Yellow", image: PLACEHOLDER },
-          { name: "White", image: PLACEHOLDER }
+          { name: "Red", image: "Type/Small-Fur-Pillow/REDHEART.png" },
+          { name: "Blue", image: "Type/Small-Fur-Pillow/BLUEHEART.png" },
+          { name: "Pink", image: "Type/Small-Fur-Pillow/PINKHEART.png" },
+          { name: "Yellow", image: "Type/Small-Fur-Pillow/YELLOWHEART.png" },
+          { name: "White", image: "Type/Small-Fur-Pillow/WHITEHEART.png" }
         ]
       },
       {
         name: "Velvet & Satin Pillows",
+        image:"Type/Velvet/REDSAT.png",
         types: [
-          { name: "Velvet Rectangle - Yellow", image: PLACEHOLDER },
-          { name: "Velvet Rectangle - Magenta", image: PLACEHOLDER },
-          { name: "Velvet Rectangle - Black", image: PLACEHOLDER },
-          { name: "Velvet Heart", image: PLACEHOLDER },
-          { name: "Satin Heart", image: PLACEHOLDER },
-          { name: "Satin Square", image: PLACEHOLDER }
+          { name: "Velvet Rectangle - Yellow", image: "Type/Velvet/YELLOWVEL.png" },
+          { name: "Velvet Rectangle - Magenta", image: "Type/Velvet/MAGENTAVEL.png" },
+          { name: "Velvet Rectangle - Black", image: "Type/Velvet/BLACKVEL.png" },
+          { name: "Velvet Heart", image: "Type/Velvet/HEARTVEL.png" },
+          { name: "Satin Heart", image: "Type/Velvet/HEARTSAT.png" },
+          { name: "Satin Square", image: "Type/Velvet/REDSAT.png" }
         ]
       },
       {
         name: "Themed Pillows",
+        image:"Type/Themed/3HVEL.png",
         types: [
-          { name: "Couple Pillow", image: PLACEHOLDER },
-          { name: "3-Heart Velvet Pillow", image: PLACEHOLDER },
-          { name: "Wedding Theme Pillow", image: PLACEHOLDER },
-          { name: "Love Theme Pillow", image: PLACEHOLDER },
-          { name: "Photo Album Pillow", image: PLACEHOLDER }
+          { name: "Couple Pillow", image: "Type/Themed/COUPLE.png" },
+          { name: "3-Heart Velvet Pillow", image: "Type/Themed/3HVEL.png" },
+          { name: "Wedding Theme Pillow", image: "Type/Themed/WEDDING.png" },
+          { name: "BirthDay Theme Pillow", image: "Type/Themed/BIRTHDAY.png" ,available:["Anniversary Theme","Love Theme"]},
         ]
       },
       {
