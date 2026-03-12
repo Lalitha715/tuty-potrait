@@ -158,19 +158,21 @@ export const product = [
       },
       {
         name: "Kids Educational Pillows",
+        image:"Type/Kids-Edu-Pil/TRANSPORT.png",
         types: [
-          { name: "Transport Theme", image: PLACEHOLDER },
-          { name: "Numbers Theme", image: PLACEHOLDER },
-          { name: "Fruits Theme", image: PLACEHOLDER },
-          { name: "Vegetables Theme", image: PLACEHOLDER }
+          { name: "Transport Theme", image: "Type/Kids-Edu-Pil/TRANSPORT.png" },
+          { name: "Numbers Theme", image: "Type/Kids-Edu-Pil/NUMBER.png" },
+          { name: "Fruits and Vegetables Theme", image: "Type/Kids-Edu-Pil/FRUIT.png" },
+          { name: "Alphabet Theme", image: "Type/Kids-Edu-Pil/ALPHA.png" }
         ]
       },
       {
         name: "Apparel",
+        image:"Type/Apparel/SHIRT.png",
         types: [
-          { name: "T-Shirt", image: PLACEHOLDER },
-          { name: "Sash", image: PLACEHOLDER },
-          { name: "Zipper Pouch", image: PLACEHOLDER }
+          { name: "T-Shirt", image: "Type/Apparel/SHIRT.png" ,available:["Colors Available Size Available"]},
+          { name: "Sash", image: "Type/Apparel/SLACH.png", color:["pink","white","Gold"] },
+          { name: "Zipper Pouch", image: "Type/Apparel/ZIP-POUCH.png", color:["Red","Magenta","Blue","Orange","Yellow"] }
         ]
       }
     ]
@@ -181,12 +183,13 @@ export const product = [
     items: [
       {
         name: "Photo Frames",
+        image:"Type/Photo-Frame/college.png",
         types: [
-          { name: "Embossing Frame", image: PLACEHOLDER },
-          { name: "Imported LED Frame", image: PLACEHOLDER },
-          { name: "Alloy Frame", image: PLACEHOLDER },
-          { name: "Aluminum Frame", image: PLACEHOLDER },
-          { name: "Collage Frame", image: PLACEHOLDER }
+          { name: "Embossing Frame", image: "Type/Photo-Frame/heartframe.png",available:["Square Frame","Rectangle Frame","Heart Frame","Circle Frame"] },
+          { name: "Imported LED Frame", image: "Type/Photo-Frame/led.png" },
+          { name: "Alloy Frame", image: "Type/Photo-Frame/Alloy.png", available:["Size:3.75X5.25 inch","5X7 inch"] },
+          { name: "Aluminum Frame", image: "Type/Photo-Frame/Aluminium.png",color:["Black","Silver","Gold"] },
+          { name: "Collage Frame", image: "Type/Photo-Frame/college.png",available:["4 Frame Collage","5 Frame Collage","Tree Frame Collage [6 Photos]","Hexagon Collage[3,4,5,6,7 Photos]"],color:["Black","White","Brown","Silver","Gold"] }
         ]
       },
       {
