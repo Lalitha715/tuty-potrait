@@ -194,29 +194,32 @@ export const product = [
       },
       {
         name: "Specialty Prints",
+        image:"Type/Special/Metal.png",
         types: [
-          { name: "Acrylic Print 4mm", image: PLACEHOLDER },
-          { name: "Canvas Print", image: PLACEHOLDER },
-          { name: "Metal Sheet Print", image: PLACEHOLDER },
-          { name: "Tile Print", image: PLACEHOLDER },
-          { name: "Rock Print", image: PLACEHOLDER }
+          { name: "Acrylic Print 4mm", image: "Type/Special/Acrylic.png" },
+          { name: "Canvas Print", image: "Type/Special/Canvas.png" },
+          { name: "Metal Sheet Print", image: "Type/Special/Metal.png" },
+          { name: "Tile Print", image: "Type/Special/Tile.png" },
+          { name: "Rock Print", image: "Type/Special/Rock.png" }
         ]
       },
       {
         name: "Themed Frames",
+        image:"Type/Theme/Mdf.png",
         types: [
-          { name: "Baby Frame", image: PLACEHOLDER },
-          { name: "Miniature Frame", image: PLACEHOLDER },
-          { name: "Sublimation MDF Frame", image: PLACEHOLDER },
-          { name: "Multi-Hearts MDF Frame", image: PLACEHOLDER }
+          { name: "Baby Frame", image: "Type/Theme/Baby.png" },
+          { name: "Miniature Frame", image: "Type/Theme/Miniature.png" },
+          { name: "Sublimation MDF Frame", image: "Type/Theme/Mdf.png" },
+          { name: "Multi-Hearts MDF Frame", image: "Type/Theme/Mdf-H.png" }
         ]
       },
       {
         name: "Custom Lighting",
+        image:"Type/Custom/Mirror.png",
         types: [
-          { name: "LED Back Light Frame", image: PLACEHOLDER },
-          { name: "Magic Mirror", image: PLACEHOLDER },
-          { name: "Acrylic Bed Lamp", image: PLACEHOLDER }
+          { name: "LED Back Light Frame", image: "Type/Custom/BackLight.png" },
+          { name: "Magic Mirror", image: "Type/Custom/Mirror.png" },
+          { name: "Acrylic Bed Lamp", image: "Type/Custom/Led.png" }
         ]
       }
     ]
@@ -227,30 +230,31 @@ export const product = [
     items: [
       {
         name: "Recognition",
+        image:"Type/Recognition/Memonto.png",
         types: [
-          { name: "Memento", image: PLACEHOLDER },
-          { name: "3D Crystal Small", image: PLACEHOLDER },
-          { name: "3D Crystal Medium", image: PLACEHOLDER },
-          { name: "3D Crystal Large", image: PLACEHOLDER }
+          { name: "Memento", image: "Type/Recognition/Memonto.png" },
+          { name: "3D Crystal ", image: "Type/Recognition/Crystal.png" },
         ]
       },
       {
         name: "Desktop Accessories",
+        image:"Type/Desktop/Table.png",
         types: [
-          { name: "Table Top Calendar", image: PLACEHOLDER },
-          { name: "Mouse Pad", image: PLACEHOLDER },
-          { name: "Acrylic Table Top", image: PLACEHOLDER },
-          { name: "Pen", image: PLACEHOLDER },
-          { name: "Pen Set", image: PLACEHOLDER }
+          { name: "Table Top Calendar", image: "Type/Desktop/TableCal.png" },
+          { name: "Mouse Pad", image: "Type/Desktop/MousePad.png" },
+          { name: "Acrylic Table Top", image: "Type/Desktop/Table.png" },
+          { name: "Pen", image: "Type/Desktop/PenEncra.png" },
+          { name: "Pen Set", image: "Type/Desktop/Pen.png" }
         ]
       },
       {
         name: "Personal Accessories",
+        image:"Type/Personal/Wallet.png",
         types: [
-          { name: "Customized Wallet", image: PLACEHOLDER },
-          { name: "Keychain - Metal", image: PLACEHOLDER },
-          { name: "Keychain - Acrylic", image: PLACEHOLDER },
-          { name: "Keychain - Photo", image: PLACEHOLDER }
+          { name: "Customized Wallet", image: "Type/Personal/Wallet.png" },
+          { name: "Keychain - Metal", image: "Type/Personal/MKey.png" },
+          { name: "Keychain - Wooden", image: "Type/Personal/WKey.png" },
+          { name: "Keychain - Photo", image: "Type/Personal/PKey.png" }
         ]
       }
     ]
@@ -261,33 +265,37 @@ export const product = [
     items: [
       {
         name: "Custom Art",
+        image:"Type/Art/Wooden.png",
         types: [
-          { name: "Resin Art", image: PLACEHOLDER },
-          { name: "Caricature", image: PLACEHOLDER },
-          { name: "Wood Engraving", image: PLACEHOLDER }
+          { name: "Resin Art", image: "Type/Art/Resin.png" },
+          { name: "Caricature", image: "Type/Art/Caricature.png" },
+          { name: "Wood Engraving", image: "Type/Art/Wooden.png" }
         ]
       },
       {
         name: "Clocks",
+        image:"Type/Clock/Sclock.png",
         types: [
-          { name: "Standard Clock", image: PLACEHOLDER },
-          { name: "Acrylic Clock", image: PLACEHOLDER }
+          { name: "Standard Clock", image: "Type/Clock/Sclock.png" },
+          { name: "Acrylic Clock", image: "Type/Clock/Aclock.png" }
         ]
       },
       {
         name: "Small Keepsakes",
+        image:"Type/SmallKeepsake/Magnet.png",
         types: [
-          { name: "Fridge Magnet", image: PLACEHOLDER },
-          { name: "Badge", image: PLACEHOLDER },
-          { name: "3D Flip Photo", image: PLACEHOLDER }
+          { name: "Fridge Magnet", image:"Type/SmallKeepsake/Magnet.png" },
+          { name: "Badge", image: "Type/SmallKeepsake/Badge.png" },
+          { name: "3D Flip Photo", image: "Type/SmallKeepsake/FlipName.png" }
         ]
       },
       {
         name: "Event Specific",
+        image:"Type/Event/Standy.png",
         types: [
-          { name: "1st Birthday Cutout", image: PLACEHOLDER },
-          { name: "Standy Display", image: PLACEHOLDER },
-          { name: "Personalized Chocolate Box", image: PLACEHOLDER }
+          { name: "1st Birthday Cutout", image: "Type/Event/Birthday.png" },
+          { name: "Standy Display", image: "Type/Event/Standy.png" },
+          { name: "Personalized Chocolate Box", image: "Type/Event/Chocolate.png" }
         ]
       }
     ]
